@@ -17,7 +17,7 @@ function sendData() {
     var email = document.getElementById("email").value;
 
     if (name && email) {
-        var message = "¡Hola! Estoy interesado en con tacarme con ustedes." +  ". Mi nombre es " + name + " y mi correo electrónico es " + email + ".";
+        var message = "¡Hola! Estoy interesado en contactarme con ustedes." +  ". Mi nombre es " + name + " y mi correo electrónico es " + email + ".";
 
 
         const numeroWhatsApp = '2364265933'; // Reemplaza con tu número de WhatsApp
