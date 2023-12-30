@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,9 +7,19 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url('fondo.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta correcta de tu imagen */
+ /*   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   /* background-position: center; /* Centra la imagen en el fondo */
+   /* background-repeat: no-repeat; /* Evita que la imagen se repita */
+/*} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.jpg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta correcta de tu imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; 
+    font-family: "Ubuntu", sans-serif;
 }
 
 header {
@@ -44,12 +54,19 @@ main {
     text-align: center;
 }
 
-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+main div button {
+    font-weight: 700;
+    padding: 14px 24 px;
+    background-color: #3c3c3c;
+    color: #ebebeb;
+    border-radius: 10px;
+    border: 2px solid #00d199;
+    transition: 0.2s;
+}
+
+main div button:hover {
+    background-color: #00d199;
+    color: white;
 }
 
 .overlay {
@@ -91,4 +108,106 @@ footer a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+}
+
+/*Estilo del Nav*/
+
+.logo-nav{
+    width: 100px;
+    margin-left: 2px;
+}
+*,
+*:b::before,
+*::after{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.navbar{
+    height:40px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo i{
+    color: #0aa5ff;
+    font-size: 22px;
+}
+
+/*.navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 2px;
+}*/
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+
+.menu-links a{
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover{
+    color: white;
+}
+
+.log-in {
+    font-weight: 500;
+    padding: 12px 22 px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+
+.log-in:hover {
+    background-color: #0aa5ff;
+    color: white;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+    
 }
